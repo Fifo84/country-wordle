@@ -109,19 +109,11 @@ function submitGuess() {
 
   const lowercaseGuess = guess.toLowerCase();
 
-  // console.log(lowercaseGuess);
-  // console.log(randomCountry);
-  // console.log(filteredCountryNames);
-
   if (!filteredCountryNames.includes(lowercaseGuess)) {
     showAlert("Not in country list");
     shakeTiles(activeTiles);
     return;
   }
-
-  // if (filteredCountryNames.includes(lowercaseGuess)) {
-  //   showAlert("This country is in the list"); // Display alert for correct guess
-  // }
 
   stopInteraction();
   activeTiles.forEach((...params) => flipTile(...params, lowercaseGuess));
@@ -239,10 +231,8 @@ document.addEventListener("DOMContentLoaded", () => {
     howToPlayModal.style.display = "flex";
   });
 
-  // Show the "How to Play" modal on page load
   howToPlayModal.style.display = "flex";
 
-  // Close the "How to Play" modal when clicking the close button
   howToPlayModalClose.addEventListener("click", () => {
     howToPlayModal.style.display = "none";
   });
