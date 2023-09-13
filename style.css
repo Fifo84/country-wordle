@@ -280,13 +280,13 @@ svg {
 }
 
 .color-correct {
-  color: #67b12e;
+  color: hsl(115, 29%, 43%);
 }
 
 .color-wrong {
-  color: #f54528;
+  color: hsl(240, 2%, 23%);
 }
 
 .color-wrong-location {
-  color: #ff8c00;
+  color: hsl(49, 51%, 47%);
 }
