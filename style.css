@@ -227,6 +227,9 @@ body {
 .alert.hide {
   opacity: 0;
 }
+svg {
+  pointer-events: none;
+}
 
 #howToPlayModal {
   display: none;
