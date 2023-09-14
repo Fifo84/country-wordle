@@ -26,10 +26,6 @@ async function getRandomCountry() {
     });
 }
 
-function doSomthing(randomCountry) {
-  console.log(randomCountry);
-}
-
 getRandomCountry();
 
 startInteraction();
